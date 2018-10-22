@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
             $err(err);
             res.redirect('back');
         } else {
-            res.render('campgrounds', { campgrounds, userPosts: false });
+            res.render('campgrounds', { campgrounds, userPosts: false, foundUsername: undefined });
         }
     });
 });
