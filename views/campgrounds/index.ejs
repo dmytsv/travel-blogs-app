@@ -26,7 +26,7 @@
     <% } %>
   </div>
 <%  if(campgrounds.length === 0 ) { %>
-<h2 class='text-center'><%= foundUsername %> doesn't have any posts yet 🙁</h2>
+<h2 class='text-center'><%= !foundUsername ? 'We do not ' : `${foundUsername} doesn't ` %>have any posts yet 🙁</h2>
 
 <% } %>
   <div class='row text-center' >
