@@ -1,0 +1,31 @@
+.hidden {
+    display: none;
+}
+
+.edit-link:hover,
+.cancel-link:hover {
+    text-decoration: underline !important;
+}
+
+#message {
+    z-index: 2;
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    width: 80vw;
+    text-align: center;
+}
+
+.list-group-link-show:hover {
+    text-decoration: none;
+}
+
+#alert {
+    z-index: 5;
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    width: 80vw;
+    text-align: center;
+
+}
