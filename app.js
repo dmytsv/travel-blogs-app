@@ -11,7 +11,8 @@ const campgroundsRoutes = require('./routes/campgrounds');
 const commentsRoutes = require('./routes/comments');
 const flash = require('connect-flash');
 
-const { MONGODB_URL, SECRET } = require("./config/keys");
+const MONGODB_URL = process.env.MONGODB_URL || require("./config/keys").MONGODB_URL,
+    SECRET = process.env.SECRET || require("./config/keys").SECRET;
 
 mongoose.connect(MONGODB_URL, { useNewUrlParser: true });
 
