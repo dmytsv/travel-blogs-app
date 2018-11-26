@@ -1,106 +1,102 @@
 body {
-    background-color: #000;
+  background-color: #000;
 }
 
 #message {
-    z-index: 2;
-    position: absolute;
-    top: 5vh;
-    left: 10vw;
-    width: 80vw;
-    text-align: center;
+  z-index: 2;
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+  width: 80vw;
+  text-align: center;
 }
 
 #landing-header {
-    z-index: 1;
-    position: relative;
-    text-align: center;
-    padding-top: 40vh;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
 }
 
 #landing-header h1 {
-    color: #fff;
-    font-size: 7vh;
-    text-shadow: 0 0 5px rgba(0, 0, 0, .5),
-    1px 0 rgba(0, 0, 0, .5),
-    1px 1px rgba(0, 0, 0, .5),
-    0 1px rgba(0, 0, 0, .5),
-    -1px 1px rgba(0, 0, 0, .5),
-    -1px 0 rgba(0, 0, 0, .5),
-    -1px -1px rgba(0, 0, 0, .5),
-    0 -1px rgba(0, 0, 0, .5),
-    1px -1px rgba(0, 0, 0, .5);
+  color: #fff;
+  font-size: 7vh;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 1px 0 rgba(0, 0, 0, 0.5),
+    1px 1px rgba(0, 0, 0, 0.5), 0 1px rgba(0, 0, 0, 0.5),
+    -1px 1px rgba(0, 0, 0, 0.5), -1px 0 rgba(0, 0, 0, 0.5),
+    -1px -1px rgba(0, 0, 0, 0.5), 0 -1px rgba(0, 0, 0, 0.5),
+    1px -1px rgba(0, 0, 0, 0.5);
 }
 
 .slideshow {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    list-style: none;
-    margin: 0;
-    padding-bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .slideshow li {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnimation 40s linear infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 40s linear infinite;
 }
 
 .slideshow li:nth-child(1) {
-    background-image: url(https://images.unsplash.com/photo-1528835333825-7dc1cee67e63);
+  background-image: url(../assets/landing-bg-1.jpeg);
 }
 
 .slideshow li:nth-child(2) {
-    background-image: url(https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0);
-    animation-delay: 8s;
+  background-image: url(../assets/landing-bg-2.jpeg);
+  animation-delay: 8s;
 }
 
 .slideshow li:nth-child(3) {
-    background-image: url(https://images.unsplash.com/photo-1519708495087-ca1b71df408c);
-    animation-delay: 16s;
+  background-image: url(../assets/landing-bg-3.jpeg);
+  animation-delay: 16s;
 }
 
 .slideshow li:nth-child(4) {
-    background-image: url(https://images.unsplash.com/photo-1508873696983-2dfd5898f08b);
-    animation-delay: 24s;
+  background-image: url(../assets/landing-bg-4.jpeg);
+  animation-delay: 24s;
 }
 
 .slideshow li:nth-child(5) {
-    background-image: url(https://images.unsplash.com/photo-1537225228614-56cc3556d7ed);
-    animation-delay: 32s;
+  background-image: url(../assets/landing-bg-5.jpeg);
+  animation-delay: 32s;
 }
 
 @keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        animation-timing-function: ease-in;
-    }
-    10% {
-        opacity: 1;
-        animation-timing-function: ease-out;
-    }
-    20% {
-        opacity: 1
-    }
-    30% {
-        opacity: 0
-    }
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
 }
 
 /* Older browser support - .no-cssanimations class added by modernizr */
 
 .no-cssanimations .slideshow li {
-    opacity: 1;
+  opacity: 1;
 }
